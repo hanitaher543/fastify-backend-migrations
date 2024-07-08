@@ -18,7 +18,7 @@ const start = async () => {
       //await sequelize.sync(); 
 
     } catch (error){
-        console.log(`Server failed to start on port ${PORT}`)
+        console.log(`Server failed to start on port ${PORT}`);
         fastify.log.error(error);
         process.exit(1);
     }
